@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  backend:
+    build: 
+      context: ./backend
+    container_name: domaincheck_backend
+    command: bash -c "python manage.py runserver 0.0.0.0:3001"
+    ports:
+      - 3001:3001
+
+  # Frontend
+  frontend:
+    build:
+      context: ./frontend
+    container_name: domaincheck_frontend
+    depends_on:
+      - backend
+    command: "npm run dev"
+    ports:
+      - 5173:5173

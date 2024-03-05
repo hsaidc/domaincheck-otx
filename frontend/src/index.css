@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styling the scrollbar in Chrome and Safari */
+::-webkit-scrollbar {
+  height: 7px;
+  width: 8px;
+  background-color: inherit;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #789EBF;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #789EBF;
+}
+
+@layer components {
+  .btn {
+    @apply flex items-center justify-center rounded-lg bg-emerald-900 px-2 py-1 font-medium text-gray-200 transition duration-100 hover:scale-105;
+  }
+  .btn-primary-200 {
+    @apply flex items-center justify-center rounded-lg px-2 py-1 shadow shadow-primary-300 ring-1 ring-primary-300 ring-opacity-80 font-medium text-gray-200 transition duration-100 hover:scale-105;
+  }
+}
