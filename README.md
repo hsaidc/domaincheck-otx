@@ -1,4 +1,4 @@
-# Domain & IPV4 OTX Query and DNS Enumration
+# Domain & IPV4 OTX Query and DNS Enumeration
 Ever wondered if a website is safe before clicking that link? Are you curious about a domain's history or potential security risks? Look no further! This website ([domaincheck.com.tr](domaincheck.com.tr)) puts the power of open threat intelligence and DNS enumeration in your hands, helping you make informed decisions about online interactions. (Application both support English and Turkish languages. Language will automatically be updated based on your browser's language.)
 
 ## Protect Yourself Online: Domain & IP Threat Intelligence at Your Fingertips
